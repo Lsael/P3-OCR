@@ -1,7 +1,10 @@
 /* Colors */
 /* Fonts */
+/* Flex */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -11,7 +14,14 @@ body {
   border: 2px solid black;
 }
 
-/*# sourceMappingURL=style.css.map */
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
 .index-header {
   display: flex;
   flex-direction: column;
@@ -24,7 +34,45 @@ body {
 
 .explore {
   background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.explore div {
+.explore .location {
   background-color: rgba(211, 211, 211, 0.269);
+  padding: 14px;
+  width: 100%;
+}
+.explore .reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore .reserve h2 {
+  max-width: 70%;
+  margin: 40px 0 13px;
+}
+.explore .reserve button {
+  padding: 15px 35px;
+  margin: 32px 0;
+  border-radius: 30px;
+  background-color: #FF79DA;
+  color: white;
+}
+
+.howto {
+  padding: 73px 18px;
+}
+.howto ol {
+  padding: 0px 25px;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.howto ol li {
+  padding: 25px;
+  background-color: whitesmoke;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -8,3 +8,11 @@
 @mixin shrikhand {
     font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
 }
+
+/* Flex */
+
+@mixin flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

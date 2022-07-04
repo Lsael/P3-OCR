@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     @include roboto
   }
   
@@ -7,12 +9,18 @@ body {
 max-width: 375px;
 margin: auto;
 border: 2px solid black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+ul {
+  list-style: none
+}
+
+img {
+  width: 100%
+}
 
 .index-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-centered;
   padding: 20px 0 12px;
   img {
       width: 45%;
@@ -21,7 +29,41 @@ border: 2px solid black;
 
 .explore {
   background-color: whitesmoke;
-  div {
+  @include flex-column-centered;
+  text-align: center;
+  .location {
     background-color: rgba(211, 211, 211, 0.269);
+    padding: 14px;
+    width: 100%;
+  }
+  .reserve {
+    @include flex-column-centered;
+    h2 {
+      max-width: 70%;
+      margin: 40px 0 13px;
+    }
+    button {
+      padding: 15px 35px;
+      margin: 32px 0;
+      border-radius: 30px;
+      background-color: $pink-secondary;
+      color: white;
+    }
+    }
+}
+
+.howto {
+  padding: 73px 18px;
+    ol {
+      padding: 0px 25px;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      li {
+        padding: 25px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+      }
   }
 }
