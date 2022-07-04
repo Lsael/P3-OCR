@@ -49,21 +49,71 @@ img {
       background-color: $pink-secondary;
       color: white;
     }
-    }
+  }
 }
 
 .howto {
-  padding: 73px 18px;
-    ol {
-      padding: 0px 25px;
-      height: 45vh;
+  padding: 73px 18px 35px;
+  ul {
+      margin-top: 6px;
+      height: 335px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       li {
-        padding: 25px;
+        padding: 20px 0;
+        margin-left: 10px;
         background-color: whitesmoke;
-        border-radius: 20px;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px lightgrey;
+        display: grid;
+        grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+        .number-icon {
+          background-color: #9356DC;
+          margin-right: auto;
+          padding: 8px 10px;
+          color: white;
+          border-radius: 50%;
+          transform: translate(-40%,0);
+          font-size: 10px;
+        }
       }
+  }
+}
+
+.restaurants {
+  @include flex-column-centered;
+  background-color: whitesmoke;
+  h2 {
+    padding: 44px 17px 22px;
+    align-self: flex-start;
+  }
+  ul {
+    width: 90%;
+    article {
+      height: 250px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 5px lightgray;
+      margin-bottom: 19px;
+      img {
+        height: 70%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+      .restaurants-box {
+        width: 100%;
+        height: 30%;
+        padding: 0 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .restaurants-text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
