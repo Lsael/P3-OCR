@@ -57,6 +57,7 @@
 .restaurants {
   @include flex-column-centered;
   background-color: whitesmoke;
+  margin-bottom: 45px;
   h2 {
     padding: 44px 17px 22px;
     align-self: flex-start;
@@ -77,14 +78,18 @@
       .restaurants-box {
         width: 100%;
         height: 30%;
-        padding: 0 13px;
+        padding: 11px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-content: space-evenly;
         .restaurants-text {
           width: 100%;
           display: flex;
           flex-direction: column;
+        }
+        i {
+          font-size: 150%;
+          padding: 4px 12px;
         }
       }
     }
