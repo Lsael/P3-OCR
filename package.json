@@ -4,7 +4,8 @@
   "description": "P3 OCR",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./styles/sass/style.css --use autoprefixer -d ./styles/sass/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Lsael",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Lsael/P3-OCR/issues"
   },
