@@ -1,0 +1,8 @@
+
+.index-header {
+    @include flex-column-centered;
+    padding: 20px 0 12px;
+    img {
+        width: 45%;
+    }
+  }
