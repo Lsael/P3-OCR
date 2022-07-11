@@ -1,5 +1,6 @@
 /* Colors */ /* Fonts */
 /* Flex */
+/* Shadow */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -99,11 +100,11 @@ footer ul {
   justify-content: space-evenly;
 }
 .howto .howto-list div {
+  box-shadow: 5px 5px 10px lightgrey;
   padding: 20px 0;
   margin-left: 10px;
   background-color: whitesmoke;
   border-radius: 25px;
-  box-shadow: 5px 5px 10px lightgrey;
   display: grid;
   grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
 }
@@ -208,6 +209,7 @@ footer ul {
   margin-left: 8px;
 }
 .main-div section article {
+  box-shadow: 5px 5px 10px lightgrey;
   background-color: white;
   border-radius: 15px;
   margin: 20px 0;

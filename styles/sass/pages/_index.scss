@@ -28,11 +28,11 @@
       flex-direction: column;
       justify-content: space-evenly;
       div {
+        @include shadow-light;
         padding: 20px 0;
         margin-left: 10px;
         background-color: whitesmoke;
         border-radius: 25px;
-        box-shadow: 5px 5px 10px lightgrey;
         display: grid;
         grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
         .number-icon {
