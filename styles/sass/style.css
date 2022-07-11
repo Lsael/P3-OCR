@@ -46,6 +46,7 @@ footer {
 }
 footer h3 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 footer ul {
   height: 129px;
@@ -53,6 +54,15 @@ footer ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.omf-buttons {
+  padding: 15px 35px;
+  margin: 32px 0;
+  border: none;
+  border-radius: 30px;
+  background-color: #FF79DA;
+  color: white;
 }
 
 .explore {
@@ -75,13 +85,6 @@ footer ul {
 .explore .reserve h1 {
   max-width: 70%;
   margin: 40px 0 13px;
-}
-.explore .reserve button {
-  padding: 15px 35px;
-  margin: 32px 0;
-  border-radius: 30px;
-  background-color: #FF79DA;
-  color: white;
 }
 
 .howto {
@@ -157,4 +160,10 @@ footer ul {
 .restaurants .restaurant-list article .restaurants-box i {
   font-size: 150%;
   padding: 4px 12px;
+}
+
+.menu-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
