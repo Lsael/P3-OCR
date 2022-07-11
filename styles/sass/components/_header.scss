@@ -1,8 +1,19 @@
 
-.index-header {
-    @include flex-column-centered;
-    padding: 20px 0 12px;
-    img {
-        width: 45%;
+header {
+    text-align: center;
+    padding: 12px 0 7px;
+    h1 {
+        @include shrikhand;
+        font-size: 30px;
+        font-weight: 400;
     }
-  }
+}
+
+.menu-header {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    a {
+        margin: auto;
+        font-size: 20px;
+    }
+}

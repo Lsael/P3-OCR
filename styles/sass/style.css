@@ -1,5 +1,4 @@
-/* Colors */
-/* Fonts */
+/* Colors */ /* Fonts */
 /* Flex */
 * {
   box-sizing: border-box;
@@ -21,14 +20,23 @@ a, a:visited {
   color: inherit;
 }
 
-.index-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0 12px;
+header {
+  text-align: center;
+  padding: 12px 0 7px;
 }
-.index-header img {
-  width: 45%;
+header h1 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.menu-header {
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+}
+.menu-header a {
+  margin: auto;
+  font-size: 20px;
 }
 
 footer {
