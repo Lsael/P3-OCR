@@ -1,8 +1,8 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 @import './general';
-@import '../components/header';
-@import '../components/footer';
 @import '../components/buttons';
+@import '../layouts/header';
+@import '../layouts/footer';
 @import '../pages/index';
 @import '../pages/menus';
