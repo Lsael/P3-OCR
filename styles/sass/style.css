@@ -11,10 +11,7 @@
 }
 
 body {
-  /*     max-width: 375px; */
-  max-width: 1200px;
   margin: auto;
-  /*     border: 2px solid black; */
 }
 
 a, a:visited {
@@ -68,7 +65,7 @@ a {
   header, header div {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 70px;
   }
   .menu-header {
     display: flex;
@@ -93,6 +90,11 @@ footer ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    text-align: center;
+  }
 }
 
 .explore {
@@ -195,7 +197,6 @@ footer ul {
 @media screen and (min-width: 992px) {
   .explore {
     flex-direction: column-reverse;
-    border-radius: 30px;
     margin: 30px 0 0;
   }
   .explore .reserve h1 {
@@ -229,13 +230,15 @@ footer ul {
     margin: auto;
   }
   .restaurants {
-    border-radius: 30px;
+    margin-bottom: 0;
+    padding-bottom: 45px;
   }
   .restaurants h2 {
     width: 100%;
     text-align: center;
   }
   .restaurants .restaurant-list {
+    width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
