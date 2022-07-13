@@ -93,5 +93,59 @@
 @media screen and (min-width:992px) {
     .explore {
       flex-direction: column-reverse;
+      border-radius: 30px;
+      margin: 30px 0 0;
+      .reserve {
+        h1 {
+          max-width: 100%;
+        }
+      }
     }
+    .howto {
+      h2 {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .howto-list {
+        width: 40%;
+        margin: auto;
+        div {
+          margin-bottom: 40px;
+          grid-template-columns:2fr 1fr 5fr 3fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas: 
+          ". . number ."
+          ". icone title .";
+          .number-icon {
+            grid-area: number;
+            margin: auto;
+            transform: translate(0, -110%);
+          }
+          i {
+            grid-area: icone;
+            margin: auto;
+          }
+          span {
+            grid-area: title;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .restaurants {
+      border-radius: 30px;
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+      .restaurant-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+          article {
+          width: 48.5%;
+        }
+      }
+  }
 }

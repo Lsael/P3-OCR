@@ -22,11 +22,6 @@ a, a:visited {
   color: inherit;
 }
 
-/* @media screen and (min-width:900px) {
-    body {
-        transform: scale(1.2);
-    }
-} */
 nav {
   display: none;
 }
@@ -200,6 +195,54 @@ footer ul {
 @media screen and (min-width: 992px) {
   .explore {
     flex-direction: column-reverse;
+    border-radius: 30px;
+    margin: 30px 0 0;
+  }
+  .explore .reserve h1 {
+    max-width: 100%;
+  }
+  .howto h2 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .howto .howto-list {
+    width: 40%;
+    margin: auto;
+  }
+  .howto .howto-list div {
+    margin-bottom: 40px;
+    grid-template-columns: 2fr 1fr 5fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". . number ." ". icone title .";
+  }
+  .howto .howto-list div .number-icon {
+    grid-area: number;
+    margin: auto;
+    transform: translate(0, -110%);
+  }
+  .howto .howto-list div i {
+    grid-area: icone;
+    margin: auto;
+  }
+  .howto .howto-list div span {
+    grid-area: title;
+    margin: auto;
+  }
+  .restaurants {
+    border-radius: 30px;
+  }
+  .restaurants h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .restaurants .restaurant-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants .restaurant-list article {
+    width: 48.5%;
   }
 }
 .main-menus {
