@@ -9,11 +9,27 @@ header {
     }
 }
 
+a {
+    margin: auto;
+    font-size: 20px;
+}
+
 .menu-header {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
-    a {
-        margin: auto;
-        font-size: 20px;
+}
+
+@media screen and (min-width:992px) {
+    header, header div {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 40px;
+    }
+    .menu-header {
+        display: flex;
+        flex-direction: column;
+        .fa-arrow-left {
+            display: none;
+        }
     }
 }

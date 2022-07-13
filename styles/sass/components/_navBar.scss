@@ -1,0 +1,12 @@
+nav {
+    display: none;
+    @media screen and (min-width:992px) {
+        & {
+            display: flex;
+            align-items: center;
+            a {
+                margin-left: 30px;
+            }
+        }
+    }
+}
