@@ -70,6 +70,7 @@ a {
   .menu-header {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .menu-header .fa-arrow-left {
     display: none;
@@ -267,6 +268,9 @@ footer ul {
   display: flex;
   flex-direction: column;
   transform: translate(0, -5%);
+  box-shadow: 5px 5px 10px lightgrey;
+  border: 1px solid lightgray;
+  border-radius: 50px;
 }
 .main-div .main-title {
   background-color: whitesmoke;

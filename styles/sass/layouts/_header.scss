@@ -28,6 +28,7 @@ a {
     .menu-header {
         display: flex;
         flex-direction: column;
+        padding: 0;
         .fa-arrow-left {
             display: none;
         }

@@ -19,6 +19,9 @@
     display: flex;
     flex-direction: column;
     transform: translate(0, -5%);
+    @include shadow-light;
+    border: 1px solid lightgray;
+    border-radius: 50px;
     .main-title {
         background-color: whitesmoke;
         display: flex;
