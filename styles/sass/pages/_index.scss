@@ -35,6 +35,9 @@
         border-radius: 25px;
         display: grid;
         grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+        i, span {
+          align-self: center;
+        }
         .number-icon {
           background-color: #9356DC;
           margin-right: auto;
@@ -110,9 +113,6 @@
         flex-direction: row;
         height: auto;
         max-width: 70%;
-        i, span {
-          align-self: center;
-        }
       }
     }
     .restaurants {

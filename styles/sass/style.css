@@ -139,6 +139,9 @@ footer ul {
   display: grid;
   grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
 }
+.howto .howto-list div i, .howto .howto-list div span {
+  align-self: center;
+}
 .howto .howto-list div .number-icon {
   background-color: #9356DC;
   margin-right: auto;
@@ -214,9 +217,6 @@ footer ul {
     height: auto;
     max-width: 70%;
   }
-  .howto .howto-list i, .howto .howto-list span {
-    align-self: center;
-  }
   .restaurants {
     margin-bottom: 0;
     padding-bottom: 45px;
@@ -239,6 +239,7 @@ footer ul {
 .main-menus {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: whitesmoke;
 }
 .main-menus section {
@@ -307,4 +308,11 @@ footer ul {
 .main-div button {
   width: 50%;
   align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .main-div {
+    width: 80%;
+    max-width: 800px;
+  }
 }/*# sourceMappingURL=style.css.map */
