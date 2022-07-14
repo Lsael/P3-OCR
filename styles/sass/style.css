@@ -37,7 +37,7 @@ nav {
   margin: 32px 0;
   border: none;
   border-radius: 30px;
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
 
@@ -212,7 +212,10 @@ footer ul {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 70%;
+    max-width: 70%;
+  }
+  .howto .howto-list i, .howto .howto-list span {
+    align-self: center;
   }
   .restaurants {
     margin-bottom: 0;
@@ -223,7 +226,7 @@ footer ul {
     text-align: center;
   }
   .restaurants .restaurant-list {
-    max-width: 1000px;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
