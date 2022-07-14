@@ -59,7 +59,7 @@
     padding: 44px 17px 22px;
     align-self: flex-start;
   }
-  .restaurant-list {
+  .restaurants-list {
     width: 90%;
     article {
       height: 250px;
@@ -116,21 +116,43 @@
       }
     }
     .restaurants {
-      margin-bottom: 0;
-      padding-bottom: 45px;
       h2 {
-        width: 100%;
         text-align: center;
+        width: 100%;
       }
-      .restaurant-list {
+      .restaurants-list {
         max-width: 1400px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-          article {
+        article {
           width: 48.5%;
         }
       }
+    }
   }
-}
+  
+  @media screen and (min-width:768px) {
+    .restaurants {
+      margin-bottom: 0;
+      padding-bottom: 45px;
+      .restaurants-list {
+        width: 80%;
+        article {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:991px) {
+    h2 {
+      text-align: center;
+      width: 100%;
+    }
+    .howto {
+      width: 50%;
+      margin: auto;
+    }
+  }
