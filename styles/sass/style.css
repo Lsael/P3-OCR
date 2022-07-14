@@ -65,7 +65,7 @@ a {
   header, header div {
     display: flex;
     justify-content: space-between;
-    margin: 0 70px;
+    padding: 20px 70px;
   }
   .menu-header {
     display: flex;
@@ -197,37 +197,22 @@ footer ul {
 @media screen and (min-width: 992px) {
   .explore {
     flex-direction: column-reverse;
-    margin: 30px 0 0;
+    box-shadow: inset 0 5px 15px lightgrey;
   }
   .explore .reserve h1 {
     max-width: 100%;
   }
-  .howto h2 {
-    text-align: center;
-    margin-bottom: 60px;
+  .howto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 18px;
   }
   .howto .howto-list {
-    width: 40%;
-    margin: auto;
-  }
-  .howto .howto-list div {
-    margin-bottom: 40px;
-    grid-template-columns: 2fr 1fr 5fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: ". . number ." ". icone title .";
-  }
-  .howto .howto-list div .number-icon {
-    grid-area: number;
-    margin: auto;
-    transform: translate(0, -110%);
-  }
-  .howto .howto-list div i {
-    grid-area: icone;
-    margin: auto;
-  }
-  .howto .howto-list div span {
-    grid-area: title;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 70%;
   }
   .restaurants {
     margin-bottom: 0;
@@ -238,7 +223,7 @@ footer ul {
     text-align: center;
   }
   .restaurants .restaurant-list {
-    width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
