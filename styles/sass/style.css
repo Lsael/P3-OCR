@@ -141,7 +141,7 @@ footer ul {
 }
 .howto .howto-list {
   margin-top: 6px;
-  height: 335px;
+  height: 321px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -177,17 +177,29 @@ footer ul {
   margin-bottom: 45px;
 }
 .restaurants h2 {
-  padding: 44px 17px 22px;
+  width: 100%;
+  padding: 54px 21px 22px;
   align-self: flex-start;
 }
 .restaurants .restaurants-list {
-  width: 90%;
+  width: 89%;
 }
 .restaurants .restaurants-list article {
+  position: relative;
   height: 250px;
   border-radius: 15px;
   box-shadow: 10px 10px 5px lightgray;
   margin-bottom: 19px;
+}
+.restaurants .restaurants-list article .new {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: green;
+  background-color: rgb(165, 226, 203);
+  padding: 6px 12px;
 }
 .restaurants .restaurants-list article img {
   height: 70%;
@@ -213,6 +225,9 @@ footer ul {
   font-size: 150%;
   padding: 4px 12px;
 }
+.restaurants .restaurants-list article .restaurants-box span {
+  margin: 3px;
+}
 
 @media screen and (min-width: 992px) {
   .explore {
@@ -236,7 +251,6 @@ footer ul {
   }
   .restaurants h2 {
     text-align: center;
-    width: 100%;
   }
   .restaurants .restaurants-list {
     max-width: 1400px;
