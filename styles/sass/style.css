@@ -67,6 +67,9 @@ header a {
     justify-content: space-between;
     padding: 20px 70px;
   }
+  header a, header div a {
+    margin-right: 30px;
+  }
   .menu-header {
     display: flex;
     flex-direction: column;

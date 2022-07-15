@@ -13,7 +13,6 @@ header {
     }
 }
 
-
 .menu-header {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
@@ -24,6 +23,9 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 20px 70px;
+        a {
+            margin-right: 30px;
+        }
     }
     .menu-header {
         display: flex;
