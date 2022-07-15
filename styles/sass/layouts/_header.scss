@@ -1,18 +1,18 @@
 
 header {
     text-align: center;
-    padding: 12px 0 7px;
+    padding: 10px 0 7px;
     span {
         @include shrikhand;
         font-size: 30px;
         font-weight: 400;
     }
+    a {
+        margin: auto;
+        font-size: 20px;
+    }
 }
 
-a {
-    margin: auto;
-    font-size: 20px;
-}
 
 .menu-header {
     display: grid;

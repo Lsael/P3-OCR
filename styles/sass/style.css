@@ -17,6 +17,7 @@ body {
 a, a:visited {
   text-decoration: none;
   color: inherit;
+  font-size: 16px;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav {
 }
 
 .omf-buttons {
-  padding: 15px 35px;
+  padding: 15px 24px;
   margin: 32px 0;
   border: none;
   border-radius: 30px;
@@ -43,15 +44,14 @@ nav {
 
 header {
   text-align: center;
-  padding: 12px 0 7px;
+  padding: 10px 0 7px;
 }
 header span {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 400;
 }
-
-a {
+header a {
   margin: auto;
   font-size: 20px;
 }
@@ -117,8 +117,11 @@ footer ul {
 }
 .explore .location {
   background-color: rgba(211, 211, 211, 0.269);
-  padding: 14px;
+  padding: 14px 25px 14px 0;
   width: 100%;
+}
+.explore .location i {
+  margin-right: 12px;
 }
 .explore .reserve {
   display: flex;
@@ -127,11 +130,14 @@ footer ul {
 }
 .explore .reserve h1 {
   max-width: 70%;
-  margin: 40px 0 13px;
+  margin: 40px 11px 13px 0;
+}
+.explore .reserve p {
+  font-size: 18px;
 }
 
 .howto {
-  padding: 73px 18px 35px;
+  padding: 69px 18px 35px;
 }
 .howto .howto-list {
   margin-top: 6px;
