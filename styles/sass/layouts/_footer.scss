@@ -13,6 +13,9 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        span {
+            margin: 5px;
+        }
     }
 }
 

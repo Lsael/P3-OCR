@@ -13,6 +13,7 @@
   }
   .reserve {
     @include flex-column-centered;
+    padding-bottom: 30px;
     h1 {
       max-width: 70%;
       margin: 40px 11px 13px 0;
@@ -25,7 +26,7 @@
 }
 
 .howto {
-  padding: 69px 18px 35px;
+  padding: 46px 20px 35px;
   .howto-list {
       margin-top: 6px;
       height: 321px;
@@ -43,6 +44,9 @@
         grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
         i, span {
           align-self: center;
+        }
+        i {
+          font-size: 19px;
         }
         .number-icon {
           background-color: #9356DC;

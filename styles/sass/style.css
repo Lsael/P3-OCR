@@ -35,7 +35,7 @@ nav {
 
 .omf-buttons {
   padding: 15px 24px;
-  margin: 32px 0;
+  margin: 28px 0;
   border: none;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -92,6 +92,9 @@ footer ul {
   flex-direction: column;
   justify-content: space-evenly;
 }
+footer ul span {
+  margin: 5px;
+}
 
 @media screen and (min-width: 768px) {
   footer {
@@ -127,6 +130,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 .explore .reserve h1 {
   max-width: 70%;
@@ -137,7 +141,7 @@ footer ul {
 }
 
 .howto {
-  padding: 69px 18px 35px;
+  padding: 46px 20px 35px;
 }
 .howto .howto-list {
   margin-top: 6px;
@@ -158,6 +162,9 @@ footer ul {
 }
 .howto .howto-list div i, .howto .howto-list div span {
   align-self: center;
+}
+.howto .howto-list div i {
+  font-size: 19px;
 }
 .howto .howto-list div .number-icon {
   background-color: #9356DC;
