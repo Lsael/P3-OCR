@@ -64,7 +64,7 @@
 .restaurants {
   @include flex-column-centered;
   background-color: whitesmoke;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
   h2 {
     width: 100%;
     padding: 54px 21px 22px;
@@ -160,7 +160,6 @@
   @media screen and (min-width:768px) {
     .restaurants {
       margin-bottom: 0;
-      padding-bottom: 45px;
       .restaurants-list {
         width: 80%;
         article {
