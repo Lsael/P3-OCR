@@ -47,6 +47,11 @@
     }
 }
 
+.restaurants__list article:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
 .heart {
     position: relative;
     .fa-solid {
@@ -68,8 +73,28 @@
 }
 
 .checkmark--animation {
-    transform: translateX(50%);
-    .fa-circle-check {
-        opacity: 0;
+    display: flex;
+    transform: translateX(55%);
+    transition: 0.5s;
+    .price {
+        align-self: flex-end;
+        padding: 12px;
     }
-} 
+    .fa-circle-check {
+        opacity: 1;
+        height: 100%;
+        font-size: 22px;
+        color: white;
+        background-color: $green-tertiary;
+        padding: 0 18px;
+        display: flex;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+    }
+}
+
+.main-div article:hover {
+    .checkmark--animation {
+        transform: translateX(0);
+    }
+}

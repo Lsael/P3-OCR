@@ -85,7 +85,7 @@
         font-size: 14px;
         border-radius: 3px;
         color: green;
-        background-color: rgb(165, 226, 203);
+        background-color: $green-tertiary;
         padding: 6px 12px;
       }
       img {
@@ -151,6 +151,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         article {
+          transition: 0.6s;
           width: 48.5%;
         }
       }

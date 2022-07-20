@@ -45,6 +45,11 @@
   color: #9356DC;
 }
 
+.restaurants__list article:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
 .heart {
   position: relative;
 }
@@ -67,10 +72,28 @@
 }
 
 .checkmark--animation {
-  transform: translateX(50%);
+  display: flex;
+  transform: translateX(55%);
+  transition: 0.5s;
+}
+.checkmark--animation .price {
+  align-self: flex-end;
+  padding: 12px;
 }
 .checkmark--animation .fa-circle-check {
-  opacity: 0;
+  opacity: 1;
+  height: 100%;
+  font-size: 22px;
+  color: white;
+  background-color: #99E2D0;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.main-div article:hover .checkmark--animation {
+  transform: translateX(0);
 }
 
 * {
@@ -278,7 +301,7 @@ footer ul span {
   font-size: 14px;
   border-radius: 3px;
   color: green;
-  background-color: rgb(165, 226, 203);
+  background-color: #99E2D0;
   padding: 6px 12px;
 }
 .restaurants .restaurants__list article img {
@@ -340,6 +363,7 @@ footer ul span {
     justify-content: space-between;
   }
   .restaurants .restaurants__list article {
+    transition: 0.6s;
     width: 48.5%;
   }
 }
@@ -415,24 +439,19 @@ footer ul span {
 }
 .main-div section article {
   box-shadow: 5px 5px 10px lightgrey;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   margin: 20px 0;
-  padding: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
 }
 .main-div section article div:nth-child(1) {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-.main-div section article .start__menuCheckmark {
-  display: block;
-}
-.main-div section article .start__menuCheckmark .price {
-  align-self: flex-end;
+  padding: 12px;
 }
 .main-div section article h4 {
   font-size: 18px;
