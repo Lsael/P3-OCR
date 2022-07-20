@@ -1,6 +1,6 @@
 
 .omf-buttons {
-    transition: 500ms;
+    transition: 800ms;
 }
 
 .omf-buttons:hover {
@@ -9,17 +9,29 @@
     background: $purple-gradient-reverse;
 }
 
-/* .nav-animations a {
-    transition: 300ms;
+.nav-animations a {
     position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        height: 15%;
+        background-color: $purple-primary;
+        transition: 1s;
+        }
 }
 
-.nav-animations a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 15%;
-    background-color: $purple-primary;
-} */
+.nav-animations a:hover {
+    &::after {
+        transform: transition;
+        right: 0;
+    }
+}
+
+.howto-list div:hover {
+    background-color: lighten($color: $purple-primary, $amount: 35) !important;
+    i {
+        color: $purple-primary;
+    }
+}
