@@ -26,3 +26,25 @@
 @mixin shadow-strong {
     box-shadow: 5px 5px 8px grey;
 }
+
+/* Hover (after) */
+@mixin hover-after {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        height: 15%;
+        background: linear-gradient(to right, $pink-secondary,$purple-primary);
+        transition: 0.5s;
+        transform: translate(-120%,-50%);
+    }
+    &:hover {
+        &::after {
+            transform: translate(0,-50%);
+            right: 0;
+        }
+    }
+}

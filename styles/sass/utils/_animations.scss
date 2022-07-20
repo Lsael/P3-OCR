@@ -10,30 +10,7 @@
 }
 
 .nav-animations a {
-    position: relative;
-    overflow: hidden;
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -10%;
-        left: 0;
-        height: 15%;
-        background: linear-gradient(to right, $pink-secondary,$purple-primary);
-        transition: 0.5s;
-        transform: translate(-120%,-50%);
-    }
-    &:hover {
-        &::after {
-            transform: translate(0,-50%);
-        }
-    }
-}
-
-.nav-animations a:hover {
-    &::after {
-        transform: transition;
-        right: 0;
-    }
+    @include hover-after;
 }
 
 .howto-list div {
@@ -102,5 +79,12 @@
     }
     .fa-circle-check::before {
         transform: rotate(360deg);
+    }
+}
+
+footer li {
+    overflow: hidden;
+    a {
+        @include hover-after;
     }
 }
