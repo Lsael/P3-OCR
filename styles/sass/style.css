@@ -29,11 +29,36 @@
   right: 0;
 }
 
+.howto-list div {
+  transition: 0.5s;
+}
+
 .howto-list div:hover {
   background-color: #f2eafb !important;
 }
 .howto-list div:hover i {
   color: #9356DC;
+}
+
+.heart {
+  position: relative;
+}
+.heart .fa-solid {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 0.3s;
+}
+.heart .fa-solid:hover {
+  opacity: 1;
+}
+.heart .fa-solid .fa-regular {
+  opacity: 0;
 }
 
 * {
@@ -224,17 +249,17 @@ footer ul span {
   padding: 54px 21px 22px;
   align-self: flex-start;
 }
-.restaurants .restaurants-list {
+.restaurants .restaurants__list {
   width: 89%;
 }
-.restaurants .restaurants-list article {
+.restaurants .restaurants__list article {
   position: relative;
   height: 250px;
   border-radius: 15px;
   box-shadow: 10px 10px 5px lightgray;
   margin-bottom: 19px;
 }
-.restaurants .restaurants-list article .new {
+.restaurants .restaurants__list article .new {
   position: absolute;
   top: 14px;
   right: 10px;
@@ -244,14 +269,14 @@ footer ul span {
   background-color: rgb(165, 226, 203);
   padding: 6px 12px;
 }
-.restaurants .restaurants-list article img {
+.restaurants .restaurants__list article img {
   height: 70%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .restaurants-list article .restaurants-box {
+.restaurants .restaurants__list article .restaurants-box {
   width: 100%;
   height: 30%;
   padding: 11px;
@@ -259,16 +284,16 @@ footer ul span {
   justify-content: space-between;
   align-content: space-evenly;
 }
-.restaurants .restaurants-list article .restaurants-box .restaurants-text {
+.restaurants .restaurants__list article .restaurants-box .restaurants-text {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.restaurants .restaurants-list article .restaurants-box i {
+.restaurants .restaurants__list article .restaurants-box i {
   font-size: 150%;
   padding: 4px 12px;
 }
-.restaurants .restaurants-list article .restaurants-box span {
+.restaurants .restaurants__list article .restaurants-box span {
   margin: 3px;
 }
 
@@ -295,14 +320,14 @@ footer ul span {
   .restaurants h2 {
     text-align: center;
   }
-  .restaurants .restaurants-list {
+  .restaurants .restaurants__list {
     max-width: 1400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants .restaurants-list article {
+  .restaurants .restaurants__list article {
     width: 48.5%;
   }
 }
@@ -310,10 +335,10 @@ footer ul span {
   .restaurants {
     margin-bottom: 0;
   }
-  .restaurants .restaurants-list {
+  .restaurants .restaurants__list {
     width: 80%;
   }
-  .restaurants .restaurants-list article {
+  .restaurants .restaurants__list article {
     margin-top: 30px;
   }
 }

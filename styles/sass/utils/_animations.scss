@@ -29,9 +29,33 @@
     }
 }
 
+.howto-list div {
+    transition: 0.5s;
+}
+
 .howto-list div:hover {
     background-color: lighten($color: $purple-primary, $amount: 35) !important;
     i {
         color: $purple-primary;
     }
 }
+
+.heart {
+    position: relative;
+    .fa-solid {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $purple-gradient;
+        background-clip: text;
+        color: transparent;
+        transition: 0.3s;
+        &:hover {
+                opacity: 1;
+            }
+    .fa-regular {
+        opacity: 0;
+    }
+    }
+    }

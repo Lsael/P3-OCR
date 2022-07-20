@@ -70,7 +70,7 @@
     padding: 54px 21px 22px;
     align-self: flex-start;
   }
-  .restaurants-list {
+  .restaurants__list {
     width: 89%;
     article {
       position: relative;
@@ -144,7 +144,7 @@
       h2 {
         text-align: center;
       }
-      .restaurants-list {
+      .restaurants__list {
         max-width: 1400px;
         display: flex;
         flex-direction: row;
@@ -160,7 +160,7 @@
   @media screen and (min-width:768px) {
     .restaurants {
       margin-bottom: 0;
-      .restaurants-list {
+      .restaurants__list {
         width: 80%;
         article {
           margin-top: 30px;
