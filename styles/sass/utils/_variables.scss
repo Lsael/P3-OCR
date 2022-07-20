@@ -5,3 +5,5 @@ $purple-primary:#9356DC ;
 $pink-secondary:#FF79DA ;
 $green-tertiary:#99E2D0 ;
 $gray-footer: rgba(0, 0, 0, 0.754);
+$purple-gradient:linear-gradient($pink-secondary,$purple-primary);
+$purple-gradient-reverse: linear-gradient($purple-primary,$pink-secondary);

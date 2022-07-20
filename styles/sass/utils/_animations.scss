@@ -1,10 +1,25 @@
 
 .omf-buttons {
-    transition: 700ms;
+    transition: 500ms;
 }
 
 .omf-buttons:hover {
     opacity: 0.70;
     @include shadow-strong;
-    background: linear-gradient($purple-primary,$pink-secondary);
+    background: $purple-gradient-reverse;
 }
+
+/* .nav-animations a {
+    transition: 300ms;
+    position: relative;
+}
+
+.nav-animations a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background-color: $purple-primary;
+} */

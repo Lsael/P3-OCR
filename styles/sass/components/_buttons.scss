@@ -4,7 +4,7 @@
     margin: 13px 0;
     border: none;
     border-radius: 30px;
-    background: linear-gradient($pink-secondary,$purple-primary);
+    background: $purple-gradient;
     color: white;
     @include shadow-light;
   }

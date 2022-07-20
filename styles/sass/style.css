@@ -2,15 +2,29 @@
 /* Flex */
 /* Shadow */
 .omf-buttons {
-  transition: 700ms;
+  transition: 500ms;
 }
 
 .omf-buttons:hover {
   opacity: 0.7;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 8px grey;
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
+/* .nav-animations a {
+    transition: 300ms;
+    position: relative;
+}
+
+.nav-animations a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background-color: $purple-primary;
+} */
 * {
   box-sizing: border-box;
   margin: 0;
