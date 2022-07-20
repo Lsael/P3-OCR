@@ -11,15 +11,22 @@
 
 .nav-animations a {
     position: relative;
+    overflow: hidden;
     &::after {
         content: '';
         position: absolute;
         bottom: -10%;
         left: 0;
         height: 15%;
-        background-color: $purple-primary;
-        transition: 1s;
+        background: linear-gradient(to right, $pink-secondary,$purple-primary);
+        transition: 0.5s;
+        transform: translate(-120%,-50%);
+    }
+    &:hover {
+        &::after {
+            transform: translate(0,-50%);
         }
+    }
 }
 
 .nav-animations a:hover {

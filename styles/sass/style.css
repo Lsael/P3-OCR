@@ -13,6 +13,7 @@
 
 .nav-animations a {
   position: relative;
+  overflow: hidden;
 }
 .nav-animations a::after {
   content: "";
@@ -20,8 +21,12 @@
   bottom: -10%;
   left: 0;
   height: 15%;
-  background-color: #9356DC;
-  transition: 1s;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  transition: 0.5s;
+  transform: translate(-120%, -50%);
+}
+.nav-animations a:hover::after {
+  transform: translate(0, -50%);
 }
 
 .nav-animations a:hover::after {
