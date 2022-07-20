@@ -71,29 +71,35 @@
   opacity: 0;
 }
 
-.checkmark--animation {
+.main-div article {
   display: flex;
-  transform: translateX(55%);
-  transition: 0.5s;
 }
-.checkmark--animation .price {
+.main-div article .price {
   align-self: flex-end;
+  margin-left: auto;
   padding: 12px;
+  transform: translateX(100%);
+  transition: 0.6s;
 }
-.checkmark--animation .fa-circle-check {
-  opacity: 1;
-  height: 100%;
+.main-div article .fa-circle-check {
   font-size: 22px;
-  color: white;
-  background-color: #99E2D0;
   padding: 0 18px;
   display: flex;
   align-items: center;
-  border-radius: 0 15px 15px 0;
+  color: white;
+  background-color: #99E2D0;
+  transform: translateX(100%);
+  transition: 0.6s;
+}
+.main-div article .fa-circle-check::before {
+  transition: 0.6s;
 }
 
-.main-div article:hover .checkmark--animation {
-  transform: translateX(0);
+.main-div article:hover .price, .main-div article:hover .fa-circle-check {
+  transform: translate(0);
+}
+.main-div article:hover .fa-circle-check::before {
+  transform: rotate(360deg);
 }
 
 * {
@@ -439,12 +445,12 @@ footer ul span {
 }
 .main-div section article {
   box-shadow: 5px 5px 10px lightgrey;
+  display: flex;
+  width: 100%;
   cursor: pointer;
   background-color: white;
   border-radius: 15px;
   margin: 20px 0;
-  display: flex;
-  justify-content: space-between;
   overflow: hidden;
 }
 .main-div section article div:nth-child(1) {

@@ -47,12 +47,12 @@
         }
         article {
             @include shadow-light;
+            display: flex;
+            width: 100%;
             cursor: pointer;
             background-color: white;
             border-radius: 15px;
             margin: 20px 0;
-            display: flex;
-            justify-content: space-between;
             overflow: hidden;
             div:nth-child(1) {
                 overflow: hidden;
