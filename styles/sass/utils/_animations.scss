@@ -1,0 +1,10 @@
+
+.omf-buttons {
+    transition: 700ms;
+}
+
+.omf-buttons:hover {
+    opacity: 0.70;
+    @include shadow-strong;
+    background: linear-gradient($purple-primary,$pink-secondary);
+}

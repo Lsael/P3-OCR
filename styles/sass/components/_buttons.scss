@@ -6,4 +6,5 @@
     border-radius: 30px;
     background: linear-gradient($pink-secondary,$purple-primary);
     color: white;
+    @include shadow-light;
   }

@@ -1,6 +1,16 @@
 /* Colors */ /* Fonts */
 /* Flex */
 /* Shadow */
+.omf-buttons {
+  transition: 700ms;
+}
+
+.omf-buttons:hover {
+  opacity: 0.7;
+  box-shadow: 5px 5px 10px grey;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,6 +47,7 @@ nav {
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  box-shadow: 5px 5px 10px lightgrey;
 }
 
 header {
