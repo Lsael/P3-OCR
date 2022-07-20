@@ -60,9 +60,16 @@
         transition: 0.3s;
         &:hover {
                 opacity: 1;
-            }
+        }
     .fa-regular {
         opacity: 0;
+        }
     }
+}
+
+.checkmark--animation {
+    transform: translateX(50%);
+    .fa-circle-check {
+        opacity: 0;
     }
-    }
+} 

@@ -66,6 +66,13 @@
   opacity: 0;
 }
 
+.checkmark--animation {
+  transform: translateX(50%);
+}
+.checkmark--animation .fa-circle-check {
+  opacity: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -416,11 +423,16 @@ footer ul span {
   justify-content: space-between;
   align-items: center;
 }
-.main-div section article .price {
-  align-self: flex-end;
+.main-div section article div:nth-child(1) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.main-div section article i {
-  display: none;
+.main-div section article .start__menuCheckmark {
+  display: block;
+}
+.main-div section article .start__menuCheckmark .price {
+  align-self: flex-end;
 }
 .main-div section article h4 {
   font-size: 18px;

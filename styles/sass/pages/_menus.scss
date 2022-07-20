@@ -54,11 +54,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .price {
-                align-self: flex-end;
+            div:nth-child(1) {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
-            i {
-                display: none;
+            .start__menuCheckmark {
+                display: block;
+                .price {
+                    align-self: flex-end;
+                }
             }
             h4 {
                 font-size: 18px;
