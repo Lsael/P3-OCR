@@ -49,6 +49,8 @@
     }
 }
 
+/* Checkmark animation */
+
 .main-div article {
     display: flex;
     .price {
@@ -79,6 +81,28 @@
     }
     .fa-circle-check::before {
         transform: rotate(360deg);
+    }
+}
+
+/* Appear animation */
+
+.main-div {
+    article {
+        opacity: 0;
+    }
+    @for $i from 1 through 11 {
+        article:nth-of-type(#{$i}) {
+            animation: appear 1s forwards ease-in ($i * 0.2s);
+        }
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
