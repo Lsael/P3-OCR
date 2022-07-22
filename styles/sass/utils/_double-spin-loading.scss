@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: double-spin-loader-appear 3s forwards;
+    animation: double-spin-loader-appear 2s forwards;
     span {
         @include shrikhand;
         font-size: 30px;
