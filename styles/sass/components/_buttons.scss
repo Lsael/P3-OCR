@@ -10,7 +10,10 @@
     width: 50%;
     align-self: center;
     text-align: center;
-    @media screen and (min-width:997px) {
-        width: 40%;
-    }
   }
+
+#home-button {
+  width: 60%;
+  padding: 16px;
+  margin: 28px;
+}

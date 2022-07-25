@@ -338,10 +338,11 @@ nav {
   align-self: center;
   text-align: center;
 }
-@media screen and (min-width: 997px) {
-  .omf-buttons {
-    width: 40%;
-  }
+
+#home-button {
+  width: 60%;
+  padding: 16px;
+  margin: 28px;
 }
 
 header {
