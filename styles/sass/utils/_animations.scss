@@ -9,15 +9,15 @@
     background: $purple-gradient-reverse;
 }
 
-.nav-animations a {
+.nav__animations a {
     @include hover-after;
 }
 
-.howto-list div {
+.howto__list div {
     transition: 0.5s;
 }
 
-.howto-list div:hover {
+.howto__list div:hover {
     background-color: lighten($color: $purple-primary, $amount: 35) !important;
     i {
         color: $purple-primary;
@@ -37,7 +37,7 @@
         top: 0;
         left: 0;
         background: $purple-gradient;
-        background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
         transition: 0.3s;
         &:hover {
@@ -51,7 +51,7 @@
 
 /* Checkmark animation */
 
-.main-div article {
+.main__div article {
     display: flex;
     .price {
         align-self: flex-end;
@@ -75,7 +75,7 @@
     }
 }
 
-.main-div article:hover {
+.main__div article:hover {
     .price, .fa-circle-check {
         transform: translate(0);
     }
@@ -86,7 +86,7 @@
 
 /* Appear animation */
 
-.main-div {
+.main__div {
     article {
         opacity: 0;
     }

@@ -13,7 +13,7 @@ header {
     }
 }
 
-.menu-header {
+.menu__header {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
 }
@@ -27,7 +27,7 @@ header {
             margin-right: 30px;
         }
     }
-    .menu-header {
+    .menu__header {
         display: flex;
         flex-direction: column;
         padding: 0;

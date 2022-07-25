@@ -1,5 +1,5 @@
 
-.main-menus {
+.main__menus {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,13 +10,13 @@
     }
 }
 
-.menu-img {
+.menu__img {
     object-fit: cover;
     width: 100%;
     height: 275px;
 }
 
-.main-div {
+.main__div {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -75,7 +75,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .main-div {
+    .main__div {
         width: 80%;
         max-width: 800px;
         @include shadow-light;

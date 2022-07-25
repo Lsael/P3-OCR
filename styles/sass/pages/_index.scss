@@ -3,7 +3,7 @@
   background-color: whitesmoke;
   @include flex-column-centered;
   text-align: center;
-  .location {
+  &__location {
     background-color: rgba(211, 211, 211, 0.269);
     padding: 14px 25px 14px 0;
     width: 100%;
@@ -27,7 +27,7 @@
 
 .howto {
   padding: 46px 20px 35px;
-  .howto-list {
+  .howto__list {
       margin-top: 6px;
       height: 321px;
       width: 100%;
@@ -94,14 +94,14 @@
         object-fit: cover;
         border-radius: 15px 15px 0 0;
       }
-      .restaurants-box {
+      .restaurants__box {
         width: 100%;
         height: 30%;
         padding: 11px;
         display: flex;
         justify-content: space-between;
         align-content: space-evenly;
-        .restaurants-text {
+        .restaurants__text {
           width: 100%;
           display: flex;
           flex-direction: column;
@@ -133,7 +133,7 @@
       align-items: center;
       justify-content: center;
       padding: 90px 18px;
-      .howto-list {
+      .howto__list {
         display: flex;
         flex-direction: row;
         height: auto;
