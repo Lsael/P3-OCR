@@ -38,6 +38,7 @@
         left: 0;
         background: $purple-gradient;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         transition: 0.3s;
         &:hover {
