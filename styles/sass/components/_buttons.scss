@@ -7,4 +7,10 @@
     background: $purple-gradient;
     color: white;
     @include shadow-light;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    @media screen and (min-width:997px) {
+        width: 40%;
+    }
   }

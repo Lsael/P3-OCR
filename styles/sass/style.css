@@ -334,6 +334,14 @@ nav {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   box-shadow: 5px 5px 10px lightgrey;
+  width: 50%;
+  align-self: center;
+  text-align: center;
+}
+@media screen and (min-width: 997px) {
+  .omf-buttons {
+    width: 40%;
+  }
 }
 
 header {
@@ -657,10 +665,6 @@ footer ul span {
 }
 .main__div section article span {
   font-size: 15px;
-}
-.main__div button {
-  width: 50%;
-  align-self: center;
 }
 
 @media screen and (min-width: 768px) {
