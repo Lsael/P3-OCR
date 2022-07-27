@@ -6,10 +6,10 @@
     height: 100%;
     background-color: whitesmoke;
     z-index: 100;
-    animation: spin-loader-appear 3s infinite forwards;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: spin-loader-appear 3s infinite forwards;
     span {
         @include shrikhand;
         display: flex;
@@ -22,6 +22,7 @@
         padding: 5px;
         background: whitesmoke;
         background-clip: padding-box;
+        text-shadow: 5px 5px 5px gray;
         &:before {
             content: '';
             position: absolute;
@@ -47,6 +48,7 @@
     }
     100% {
         opacity: 0;
+        visibility: hidden;
     }
 }
 

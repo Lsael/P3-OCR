@@ -175,10 +175,10 @@ footer li a:hover::after {
   height: 100%;
   background-color: whitesmoke;
   z-index: 100;
-  animation: spin-loader-appear 3s infinite forwards;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: spin-loader-appear 3s infinite forwards;
 }
 .spin-loader span {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
@@ -192,6 +192,7 @@ footer li a:hover::after {
   padding: 5px;
   background: whitesmoke;
   background-clip: padding-box;
+  text-shadow: 5px 5px 5px gray;
 }
 .spin-loader span:before {
   content: "";
@@ -216,6 +217,7 @@ footer li a:hover::after {
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes spin-loader-anim {
@@ -243,7 +245,7 @@ footer li a:hover::after {
 }
 .double-spin-loader span {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   position: relative;
 }
 .double-spin-loader span::after {
@@ -275,6 +277,10 @@ footer li a:hover::after {
   animation: double-spin-anim 5s linear infinite reverse forwards;
 }
 
+#demo {
+  animation: double-spin-loader-appear;
+}
+
 @keyframes double-spin-loader-appear {
   90% {
     opacity: 0.95;
@@ -294,7 +300,7 @@ footer li a:hover::after {
 }
 @media screen and (max-width: 768px) {
   .double-spin-loader span {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 }
 * {

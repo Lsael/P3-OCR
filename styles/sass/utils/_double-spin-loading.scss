@@ -12,7 +12,7 @@
     animation: double-spin-loader-appear 2s forwards;
     span {
         @include shrikhand;
-        font-size: 30px;
+        font-size: 26px;
         position: relative;
         &::after {
             content: "";
@@ -45,6 +45,10 @@
     }
 }
 
+#demo {
+    animation: double-spin-loader-appear;
+}
+
 @keyframes double-spin-loader-appear {
     90% {
         opacity: 0.95;
@@ -67,7 +71,7 @@
 @media screen and (max-width:768px) {
     .double-spin-loader {
         span {
-            transform: scale(0.7);
+            transform: scale(0.5);
         }
     }
 }
