@@ -1,8 +1,8 @@
 @import '../utils/variables';
 @import '../utils/mixins';
-@import '../utils/animations';
-@import '../utils/spin-loading';
-@import '../utils/double-spin-loading';
+@import '../utils/animations/animations';
+@import '../utils/animations/spin-loading';
+@import '../utils/animations/double-spin-loading';
 @import './general';
 @import '../components/navBar';
 @import '../components/buttons';
