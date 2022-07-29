@@ -29,7 +29,7 @@
 
 /* Hover (after) */
 
-@mixin hover-after {
+@mixin hover-nav {
     position: relative;
     overflow: hidden;
     &::after {

@@ -104,6 +104,10 @@
 .main__div article {
   opacity: 0;
 }
+.main__div h3 {
+  opacity: 0;
+  animation: appear 1s forwards ease-in;
+}
 .main__div article:nth-of-type(1) {
   animation: appear 1s forwards ease-in 0.2s;
 }

@@ -10,7 +10,7 @@
 }
 
 .nav__animations a {
-    @include hover-after;
+    @include hover-nav;
 }
 
 .howto__list div {
@@ -91,6 +91,10 @@
     article {
         opacity: 0;
     }
+    h3 {
+        opacity: 0;
+        animation: appear 1s forwards ease-in;
+    }
     @for $i from 1 through 11 {
         article:nth-of-type(#{$i}) {
             animation: appear 1s forwards ease-in ($i * 0.2s);
@@ -110,6 +114,6 @@
 footer li {
     overflow: hidden;
     a {
-        @include hover-after;
+        @include hover-nav;
     }
 }
