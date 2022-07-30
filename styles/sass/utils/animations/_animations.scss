@@ -19,6 +19,7 @@
 
 .howto__list div:hover {
     background-color: lighten($color: $purple-primary, $amount: 35) !important;
+    cursor: pointer;
     i {
         color: $purple-primary;
     }
