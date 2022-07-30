@@ -9,10 +9,6 @@
     background: $purple-gradient-reverse;
 }
 
-.nav__animations a {
-    @include hover-nav;
-}
-
 .howto__list div {
     transition: 0.5s;
 }
