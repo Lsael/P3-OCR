@@ -1,5 +1,3 @@
 # P3-OCR
 
-### Link to the site
-
-## https://lsael.github.io/Lsael/
+Third studies project focused on CSS animations and Sass/scss.
